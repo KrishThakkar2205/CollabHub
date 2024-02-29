@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Bloggers</title>
+    <!-- Boot Strap 5 links  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap 4 Links  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Coustom CSS links -->
+    <link rel="stylesheet" href="Indexcss.css">
+    <link rel="icon" href="TextCollabHub.svg" type="image/x-icon" style="height: 10rem;">
+
+</head>
+<body>
+    <div class="container sticky-top" id="navbar-container">
+        <nav class="navbar navbar-expand-lg bg-dark nav-dark" id="navbar-main">
+            <div class="container-fluid">
+                <a href="" class="nav-brand disabled nav-item-style">
+                    <img src="TextCollabHub-removebg-preview.png" alt="" id="brand-logo">
+                </a>
+                
+                <button class="navbar-toggler light" data-bs-toggle="collapse" data-bs-target="#link">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="link">
+                    <ul class="navbar-nav">
+                        <li class="nav-item nav-item-style">
+                            <a href="Index.html" class="nav-link nav-link-txt"> home</a>
+                        </li>
+                        <li class="nav-item dropdown nav-item-style">
+                            <a href="#" class="nav-link dropdown-toggle nav-link-txt" data-bs-toggle="dropdown">influencer</a>
+                            <ul class="dropdown-menu fade">
+                                <li class="dropdown-item ">
+                                    <a href="fashion.html">Fashion</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="lifestyle.html">Lifestyles</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="tech.html">Gadgets & Tech</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="foodie.html">Food</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="finance.html">Finance</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="entertainment.html">Entertainment</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown nav-item-style">
+                            <a href="#" class="nav-link dropdown-toggle nav-link-txt" data-bs-toggle="dropdown">
+                                agencies
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#">Marketing Agencies</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-item-style">
+                            <a href="Index.html" class="nav-link nav-link-txt">support / faq's</a>
+                        </li>
+                        <li class="nav-item nav-item-style">
+                            <a href="login.html" class="nav-link nav-link-txt">login /signup</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-3" id="search_bar_container">
+        <div class="container-fluid" id="search_bar" >
+            <input type="text" id="search" name="search" placeholder="Search">
+        </div>
+    </div>
+    
+    <div id="filter-button" class="container mt-3 d-flex justify-content-around">
+        <div class="btndiv">
+            <button class="btn btn-warning filter-btn dropdown dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#location">LOCATION
+                <ul class="dropdown-menu fade bg-warning" id="location">
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">maninagar</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">isanpur</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">ghodasar</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">vastral</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">bopal</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">prahladnagar</a>
+                    </li>
+                </ul>
+            </button>
+        </div>
+        <div class="btndiv">
+            <button class="btn btn-warning filter-btn dropdown dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#budget">BUDGET
+                <ul class="dropdown-menu fade bg-warning" id="budget">
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">2500-5000</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">5000-10000</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">10000-12500</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">12500-15000</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">15000+</a>
+                    </li>
+                </ul>
+            </button>
+        </div>
+        <div class="btndiv">
+            <button class="btn btn-warning dropdown dropdown-toggle filter-btn" data-bs-target="#platform" data-bs-toggle="dropdown">PLATFORM
+                <ul class="dropdown-menu fade bg-warning" id="platform">
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">instagram</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">facebook</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">you tube</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">threads</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="" class="filter-link-txt">twitter</a>
+                    </li>
+                </ul>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="influencer-profile-list" >
+        <div class="container influencer-mini-profile d-flex direction-row mt-5 " type="button">
+            <img src="influencers\foodies.of.vadodara.jpg" alt="" class="influencer-profile-img">
+            <div>
+                <h5 class="mini-profile-txt" type="button" id="name">Name: Vidhi Sharma</h5>
+                <h5 class="mini-profile-txt" type="button">Location: Iskon</h5>
+                
+            </div>
+            <div>
+                <img src="https://icones.pro/wp-content/uploads/2021/02/instagram-logo-icone4.png" class="profile-platform-logo" alt=""><h6 class="mini-profile-txt" style="display: inline;">42.3k</h6>
+            </div>
+        </div>
+        <div class="container influencer-mini-profile d-flex direction-row mt-5" type="button">
+        <img src="influencers\nikitaShah.jpg" alt="" class="influencer-profile-img">
+            <div>
+                <h5 class="mini-profile-txt" type="button" id="name">Name: Nikita Shah</h5>
+                <h5 class="mini-profile-txt" type="button">Location: Paldi</h5>
+            </div>
+            <div>
+                <img src="https://icones.pro/wp-content/uploads/2021/02/instagram-logo-icone4.png" class="profile-platform-logo" alt=""><h6 class="mini-profile-txt" style="display: inline;">743k</h6>
+            </div>
+        </div>
+        <div class="container influencer-mini-profile d-flex direction-row mt-5" type="button">
+            <img src="influencers\trishapandya.jpg" alt="" class="influencer-profile-img">
+            <div>
+                <h5 class="mini-profile-txt" type="button" id="name">Name: Trisha Pandya</h5>
+                <h5 class="mini-profile-txt" type="button">Location: Paldi</h5>
+            </div>
+            <div>
+                <img src="https://icones.pro/wp-content/uploads/2021/02/instagram-logo-icone4.png" class="profile-platform-logo" alt=""><h6 class="mini-profile-txt" style="display: inline;">743k</h6>
+            </div>
+        </div>
+
+        <div class="container influencer-mini-profile d-flex direction-row mt-5" type="button">
+            <img src="influencers\surtifoodlife.jpg" alt="" class="influencer-profile-img">
+            <div>
+                <h5 class="mini-profile-txt" type="button" id="name">Name: Utsav Soni</h5>
+                <h5 class="mini-profile-txt" type="button">Location: Maninagar</h5>
+            </div>
+            <div>
+                <img src="https://icones.pro/wp-content/uploads/2021/02/instagram-logo-icone4.png" class="profile-platform-logo" alt=""><h6 class="mini-profile-txt" style="display: inline;">743k</h6>
+            </div>
+        </div>
+
+        <div class="container influencer-mini-profile d-flex direction-row mt-5" type="button">
+            <img src="influencers\thefoodaddictsurat.jpg" alt="" class="influencer-profile-img">
+            <div>
+                <h5 class="mini-profile-txt" type="button" id="name">Name: Divyesh Jariwala</h5>
+                <h5 class="mini-profile-txt" type="button">Location: Maninagar</h5>
+            </div>
+            <div>
+                <img src="https://icones.pro/wp-content/uploads/2021/02/instagram-logo-icone4.png" class="profile-platform-logo" alt=""><h6 class="mini-profile-txt" style="display: inline;">743k</h6>
+            </div>
+        </div>
+
+        <div class="container influencer-mini-profile d-flex direction-row mt-5" type="button">
+            <img src="influencers\pathikthakkar.jpg" alt="" height="120px" width="120px" class="rounded-pill">
+            <div>
+                <h5 class="mini-profile-txt" type="button" id="name">Name: Pathik Thakkar</h5>
+                <h5 class="mini-profile-txt" type="button">Location: Maninagar</h5>
+            </div>
+            <div>
+                <img src="https://icones.pro/wp-content/uploads/2021/02/instagram-logo-icone4.png" class="profile-platform-logo" alt=""><h6 class="mini-profile-txt" style="display: inline;">743k</h6>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
