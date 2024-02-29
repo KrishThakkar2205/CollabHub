@@ -29,5 +29,5 @@ backButton.addEventListener("click" ,()=> {
 })
 
 home.addEventListener("click", () => {
-    window.location.href = "Index.html"
+    window.location.href = "index.html"
 })
