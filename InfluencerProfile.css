@@ -1,0 +1,66 @@
+#profile-influencer-image{
+    margin-top: 0.9rem;
+    
+    height: 10rem;
+    width: 10rem;
+    border-radius: 5rem;
+}
+#influencer-name{
+    color: white;
+    text-align: center;
+
+}
+.btn{
+    height: 3rem;
+    width: 8rem;
+}
+.main-profile-platform-logo{
+    margin: 0.7rem 1rem 0.9rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 1.25rem;
+}
+#packages-heading{
+    color: white;
+    text-align: center;
+}
+#packages{
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+@media only screen and (width<=48rem){
+    #packages{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (width<=26.875rem) {
+    #graph-package{
+        flex-direction: column;
+        align-items: center;
+    }
+    #profile-influencer-image{
+        margin-top: 0.9rem;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 2.5rem;
+    }
+    #details-div{
+        flex-direction: column !important;
+    }
+    #graph{
+        width: 20rem !important;
+    }
+}
+@media only screen and (width<=20rem) {
+    #graph{
+        width: 15rem !important;
+    }
+    .main-profile-platform-logo{
+        
+        height: 2rem;
+        width: 2rem;
+        border-radius: 1rem;
+    }
+}
